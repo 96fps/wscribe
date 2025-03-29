@@ -21,7 +21,7 @@ export WSCRIBE_MODELS_DIR=$XDG_DATA_HOME/whisper-models # example
 - Recommended way for downloading the models is to use the [[https://github.com/geekodour/wscribe/blob/main/scripts/fw_dw_hf_wo_lfs.sh][helper script]], it'll download the models to ~WSCRIBE_MODELS_DIR~.
   #+begin_src shell
 cd /tmp # temporary script, only needed to download the models
-curl https://raw.githubusercontent.com/geekodour/wscribe/main/scripts/fw_dw_hf_wo_lfs.sh
+wget https://raw.githubusercontent.com/geekodour/wscribe/main/scripts/fw_dw_hf_wo_lfs.sh
 chmod u+x fw_dw_hf_wo_lfs.sh
 ./fw_dw_hf_wo_lfs.sh tiny # other models: tiny, small, medium and large-v2
   #+end_src
