@@ -28,9 +28,12 @@ chmod u+x fw_dw_hf_wo_lfs.sh
 ***** Manual
 You can download the models directly [[https://huggingface.co/guillaumekln][from here]] using ~git lfs~, make sure you download/copy them to ~WSCRIBE_MODELS_DIR~
 **** 3. Install wscribe
-Assuming you already have a working ~python>=3.10~ setup
+Assuming you already have a working ~python>=3.10~ setup.
+
 Clone or download this repository, then install locally using pipx.
 #+begin_src shell
+git clone https://github.com/96fps/wscribe.git
+cd wscribe
 pipx install -en .
 #+end_src
 *** Usage
