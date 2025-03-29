@@ -14,7 +14,7 @@ These instructions were tested on ~NixOS:Python3.10~ and ~ArchLinux:Python3.10~ 
 **** 1. Set required env var
 - ~WSCRIBE_MODELS_DIR~ : Path to the directory where whisper models should be downloaded to.
 #+begin_src bash
-export WSCRIBE_MODELS_DIR=$XDG_DATA_HOME/whisper-models # example
+export WSCRIBE_MODELS_DIR=$HOME/whisper-models # example
 #+end_src
 **** 2. Download the models
 ***** Recommended
@@ -29,8 +29,9 @@ chmod u+x fw_dw_hf_wo_lfs.sh
 You can download the models directly [[https://huggingface.co/guillaumekln][from here]] using ~git lfs~, make sure you download/copy them to ~WSCRIBE_MODELS_DIR~
 **** 3. Install wscribe
 Assuming you already have a working ~python>=3.10~ setup
+Clone or download this repository, then install locally using pipx.
 #+begin_src shell
-pip install wscribe
+pipx install -en .
 #+end_src
 *** Usage
 #+begin_src shell
